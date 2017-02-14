@@ -1,0 +1,116 @@
+\documentclass[
+version=last,toc=bib,toc=graduated,toc=index,toc=listof,9pt,openany]{scrbook}
+%\pdfminorversion=4
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman, english]{babel}
+\usepackage{dejavu}
+
+\usepackage{ifmtarg}
+\usepackage{ifthen}
+
+\usepackage{geometry}
+\geometry{%a6paper
+paperwidth=125mm, paperheight=168mm, 
+portrait,
+top=22mm, inner=22mm, outer=20mm, bottom=25mm,
+headsep=3mm, footskip=12mm
+}
+
+\usepackage{ragged2e} % schöneren Textsatz (Silbentrennung) bei Nicht-Blocksatz
+\usepackage{lscape}
+\setlength{\parskip}{0pt}
+
+%\pdfminorversion=4
+
+
+%\usepackage[babel,german=quotes]{csquotes}
+\usepackage{relsize}
+
+\clubpenalty=10000 %keine Schusterjungen
+ \widowpenalty=10000 
+ \displaywidowpenalty=10000 % keine Hurenkinder
+
+\usepackage[letterspace=16]{microtype} %schönerer Textsatz
+
+\usepackage{graphicx} %Bilder
+
+%Dateipfade, wo die Bilder liegen
+\graphicspath{{images-print/}{icons/}{extra-pages/}{wallpaper/}}
+\usepackage{wrapfig}  % umflossene Logos von Sponsoren mit Multiabsatztexten
+
+\usepackage{tabu}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage[table,cymk]{xcolor}
+\usepackage{colortbl}
+
+% PDF-Seiten einbinden
+% pdfpages, darf erst nach colortbl geladen werden!
+\usepackage{pdfpages}
+
+% PDFs als Hintergrundbilder
+% wallpaper, darf erst nach colortbl geladen werden!
+\usepackage{wallpaper}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+
+\usepackage{mathabx} % für das Rautensymbol in der Speisekarte
+\usepackage{textcomp} % degree symbol
+
+\usepackage{refcount} % Berechnung der Seite, auf der sich die Karte befindet
+
+\usepackage[manualmark]{scrpage2}
+\pagestyle{scrplain}
+
+
+\newcommand{\acro}[1]{{\textsmaller{#1}}} % Akronyme
+
+% Überschriften in DejaVu Sans Condensed
+\addtokomafont{sectioning}{\fontfamily{DejaVuSansCondensed-TLF}\selectfont}
+\addtokomafont{pageheadfoot}{\usefont{T1}{DejaVuSansCondensed-TLF}{m}{n}}
+\addtokomafont{pagenumber}{\usefont{T1}{DejaVuSansCondensed-TLF}{m}{n}}
+
+
+%Titelei
+\title{FOSSGIS 2017}
+\subtitle{Programm}
+\author{FOSSGIS e.V.}
+\date{\today}
+
+%\newcommand{\talkroom}{}
+\clearscrheadings
+
+% Seitenzahlen
+\cfoot[\begin{small}\pagemark\end{small}]{\begin{small}\pagemark\end{small}}
+\ofoot[]{}
+\ifoot[]{}
+\pagestyle{scrplain}
+
+% Durchschuss erhöhen
+\linespread{1.15}
+
+% Befehlsdefinitionen einbinden
+\input{abstract-commands}
+
+
+\begin{document}
+\lsstyle
+\usefont{T1}{DejaVuSansCondensed-TLF}{m}{n}
+ 
+% Schneidemarken
+% Befehl zum Aufrufen definieren
+\newcommand{\cropmarkswallpaper}{%
+\CenterWallPaper{1.0}{crop-marks}%
+}
+
+\begin{titlepage}
+%\includepdf{deckseite-vektor-mit-schnittmarken}
+\end{titlepage}
+
+\cropmarkswallpaper
+\selectlanguage{ngerman}
+\input{mittwoch}
+
+
+\end{document}
