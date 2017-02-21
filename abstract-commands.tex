@@ -10,30 +10,72 @@
 
 
 % Hintergrund setzen
-\def\montag{Montag}
-\def\dienstag{Dienstag}
 \def\mittwoch{Mittwoch}
+\def\donnerstag{Donnerstag}
+\def\freitag{Freitag}
+
+% Seitenstile definieren
+% Mittwoch
+\DeclareNewLayer[background, oddpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/mittwoch-ungerade.pdf}%
+}]{mittwochungerade}
+\DeclareNewLayer[background, evenpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/mittwoch-gerade.pdf}%
+}]{mittwochgerade}
+\newpairofpagestyles[scrheadings]{mittwoch}{}
+\AddLayersAtBeginOfPageStyle{mittwoch}{mittwochgerade}
+\AddLayersAtBeginOfPageStyle{mittwoch}{mittwochungerade}
+% Donnerstag
+\DeclareNewLayer[background, oddpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/dienstag-ungerade.pdf}%
+}]{donnerstagungerade}
+\DeclareNewLayer[background, evenpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/dienstag-gerade.pdf}%
+}]{donnerstaggerade}
+\newpairofpagestyles[scrheadings]{donnerstag}{}
+\AddLayersAtBeginOfPageStyle{donnerstag}{donnerstaggerade}
+\AddLayersAtBeginOfPageStyle{donnerstag}{donnerstagungerade}
+% Freitag
+\DeclareNewLayer[background, oddpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/montag-ungerade.pdf}%
+}]{freitagungerade}
+\DeclareNewLayer[background, evenpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/montag-gerade.pdf}%
+}]{freitaggerade}
+\newpairofpagestyles[scrheadings]{freitag}{}
+\AddLayersAtBeginOfPageStyle{freitag}{freitaggerade}
+\AddLayersAtBeginOfPageStyle{freitag}{freitagungerade}
+
+% \setpagebackground wählt anhand des aktuellen Tages aus, welcher
+% Seitenstil verwendet werden soll. Jeder Tag ist ein eigener Seitenstil.
 \newcommand{\setpagebackground}{ %
-	\ifthenelse{\equal{\konferenztag}{\montag}}{ %
-		\ifthispageodd{\ThisCenterWallPaper{1.0}{montag-ungerade}}{\ThisCenterWallPaper{1.0}{montag-gerade}}%
-	}{}
-	\ifthenelse{\equal{\konferenztag}{\dienstag}}{ %
-		\ifthispageodd{\ThisCenterWallPaper{1.0}{dienstag-ungerade}}{\ThisCenterWallPaper{1.0}{dienstag-gerade}}%
-	}{}
-	\ifthenelse{\equal{\konferenztag}{\mittwoch}}{ %
-		\ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}%
-	}{}
+  \ifthenelse{\equal{\konferenztag}{\mittwoch}}{%
+    \pagestyle{mittwoch}
+  }{}
+  \ifthenelse{\equal{\konferenztag}{\donnerstag}}{%
+    \pagestyle{donnerstag}
+  }{}
+  \ifthenelse{\equal{\konferenztag}{\freitag}}{%
+    \pagestyle{freitag}
+  }{}
 }
 
 
-% Titeltabelle setzen
+% zusätzlicher Spaltentyp für die Titeltabelle
 \newcolumntype{Y}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 
-%% Längen für Sponsorenbox und Titelboxen
-\newcommand{\gruenerhs}{Grüner Hörsaal}
+%% Längen für Titelboxen
 \newlength{\titleboxwidth}
 \setlength{\titleboxwidth}{\textwidth}
 \advance\titleboxwidth by -6pt
+
+% Befehl zum Setzen von Titelboxen
 \newcommand{\setabstract}[6]{
 	% 1. Sprecher
 	% 2. Titel
@@ -41,7 +83,8 @@
 	% 4. Abstract (Text)
 	% 5. Farbe
 	% 6. Raum
-	\thispagestyle{scrheadings} 
+	%\thispagestyle{scrheadings}
+  \setpagebackground
 	\setlength\tabcolsep{0pt}
 	% \setlength{\fboxsep}{0pt}
 	\noindent\fcolorbox{white}{#5}{\parbox{\titleboxwidth}{%
@@ -96,7 +139,6 @@
 % muss ausgelagert und durch \makeatletter umgeben sein
 \makeatletter
 \newcommand{\isabstractempty}[1]{%
-		\setpagebackground
 		\vspace{0.5em}\newline%
 		#1 \par% % Abstract
 		\vspace{1.5em}% Abstand zum nächsten Talk, auch wenn es einen Abstract gibt
