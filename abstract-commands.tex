@@ -211,7 +211,7 @@ height=169mm, contents={%
 				\tabularnewline
 				{\noindent\large \bfseries #1}% % Titel
 				&
-				HS\,#3
+				Workshop #3
 				\tabularnewline
 			\end{tabu}
 		}
@@ -243,3 +243,41 @@ height=169mm, contents={%
 		}}
 		\setlength{\fboxsep}{3pt}
 	}
+
+
+
+% Definitionen für Tagestabellen
+\newcolumntype{Z}[1]{>{\RaggedRight\arraybackslash}p{#1}}%
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}%
+\newcommand{\talk}[2]%
+{%
+	& \textbf{#1} \newline \emph{#2}
+}%
+% Titel -- Redner
+
+
+\newcommand{\workshop}[3]%
+{%
+	\workshopbox{#1}{#2}{#3}
+}%
+
+\newcommand{\otherevent}[1]%
+{%
+	& \textbf{#1}
+}%
+
+\newcommand{\aulaevent}[2]%
+{%
+	&
+	\multicolumn{3}{c}{
+		\textbf{#1} (Aula) \par \emph{#2}
+	}
+}%
+
+\newcommand{\coffeespace}{\vspace{0.4em}}
+\newcommand{\workshopspace}{\vspace{0.5em}\\}
+
+% Farben definieren
+\definecolor{commongray}{gray}{.9}
+%\vspace{-1.2em}
+\renewcommand{\arraystretch}{1.4}
