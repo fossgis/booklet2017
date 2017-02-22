@@ -49,8 +49,6 @@ headsep=3mm, footskip=12mm
 \usepackage{pdfpages}
 
 % PDFs als Hintergrundbilder
-% wallpaper, darf erst nach colortbl geladen werden!
-\usepackage{wallpaper}
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{array}
@@ -98,17 +96,11 @@ headsep=3mm, footskip=12mm
 \lsstyle
 \usefont{T1}{DejaVuSansCondensed-TLF}{m}{n}
  
-% Schneidemarken
-% Befehl zum Aufrufen definieren
-\newcommand{\cropmarkswallpaper}{%
-\CenterWallPaper{1.0}{crop-marks}%
-}
-
+\pagestyle{cropmarksstyle}
 \begin{titlepage}
 %\includepdf{deckseite-vektor-mit-schnittmarken}
 \end{titlepage}
 
-\cropmarkswallpaper
 \selectlanguage{ngerman}
 \input{mittwoch}
 \input{donnerstag}

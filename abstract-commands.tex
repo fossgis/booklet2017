@@ -9,6 +9,20 @@
 \newcommand{\konferenztag}{KeinTag}
 
 
+% Standard-Seitenstil definieren (Schnittmarken mit Seitenazhl)
+\DeclareNewLayer[background, oddpage, width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/crop-marks.pdf}%
+}]{cropmarksodd}
+\DeclareNewLayer[background, evenpage, width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/crop-marks.pdf}%
+}]{cropmarkseven}
+\newpairofpagestyles[scrheadings]{cropmarksstyle}{}
+\AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarksodd}
+\AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarkseven}
+
+
 % Hintergrund setzen
 \def\mittwoch{Mittwoch}
 \def\donnerstag{Donnerstag}
