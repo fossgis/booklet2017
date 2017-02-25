@@ -1,13 +1,11 @@
 \renewcommand{\konferenztag}{\donnerstag}
-\section*{Vorträge am Donnerstag}
-\label{donnerstag}
 % 10:30
 \newsmalltimeslot{09:30}
 \abstractNeun{Roman Zoller}%
 {Ngeo: OpenLayers meets Angular}%
 {}%
 {Ngeo ist eine Open-Source-JavaScript-Bibliothek, die eine Kombination der Funktionalität von
-OpenLayers und der Modularität von AngularJS ermöglicht. Sie stellt AngularJS Services und
+OpenLayers und der Modularität von AngularJS ermöglicht. Sie stellt AngularJS-Services und
 Komponenten zur Verfügung, die als Bausteine für GIS-Webanwendungen benutzt werden können. Dieser
 Vortrag zeigt anhand von konkreten Codebeispielen auf, wie Ngeo die Softwareentwicklung vereinfacht.
 Wir beschreiben, wie Ngeo in moderne Applikationen integriert werden kann, und geben einen Einblick
@@ -16,14 +14,16 @@ halten.}
 
 
 \abstractElf{Armin Retterath}%
-{INSPIRE vs OpenData? - Probleme und mögliche Lösungen}%
+{INSPIRE vs. Open Data? -- Probleme und mögliche Lösungen}%
 {}%
 {Im Vortrag werden die Unterschiede und Gemeinsamkeiten von GDI- und Open-Data-Architekturen anhand
 praktischer Beispiele herausgearbeitet. Auf der einen Seite steht ein starrer, auf Normen
 basierender Ansatz, auf der anderen Seite ist die Enwicklung eher Community getrieben und die
-Standardisierung steht noch aus. Aufgrund des großen politischen Drucks in Richtung Open-Data steigt
-auch der Druck auf Geodatenprovider ihre Metadaten Open-Data-kompatibel bereitzustellen. Hier gibt
-es einige semantische und technische Hürden, die man kennen und überwinden muss. Der Beitrag gibt
+Standardisierung steht noch aus.
+
+Aufgrund des großen politischen Drucks in Richtung Open Data steigt
+auch der Druck auf Geodatenprovider ihre Metadaten Open-Data-kompatibel bereitzustellen. Es gibt
+hier einige semantische und technische Hürden, die man kennen und überwinden muss. Der Beitrag gibt
 hierzu Hilfestellung.}
 
 \abstractDreizehn{Roland Olbricht}%
@@ -34,10 +34,10 @@ hierzu Hilfestellung.}
 
 In diesem Vortrag wird eine Kenngröße ermittelt, die einer Kante ihre mathematische Bedeutung im
 Netzwerk zuordnet. Dies zeigt Kanten auf, deren Bedeutung stark von ihrer a-priori-Wichtigkeit
-abweicht, z.B. Autobahnausfahrten, die sich gegen die durchgehende Autobahn durchsetzen.
+abweicht, z.\,B. Autobahnausfahrten, die sich gegen die durchgehende Autobahn durchsetzen.
 
-Es wird im Vortrag die Kenngröße exakt definiert, eingeordnet,
-und es werden interessante Kanten im OpenStreetMap-Netzwerk untersucht.
+Es wird in diesem Vortrag die Kenngröße exakt definiert, eingeordnet
+und es werden interessante Kanten im OSM"=Netzwerk untersucht.
 }
 
 \newtimeslot{10:00}
@@ -45,7 +45,7 @@ und es werden interessante Kanten im OpenStreetMap-Netzwerk untersucht.
 {Kennst du deine GDI?}%
 {}%
 {Als Verantwortliche einer GDI sind wir regelmäßig mit typischen Fragen konfrontiert die wir heute
-  nicht ohne Stirnrunzeln beantworten können: Wo wirkt sich eine Schemaänderung des
+  nicht ohne Stirnrunzeln beantworten können. Wo wirkt sich eine Schemaänderung des
   Parzellendatensatzes in der GDI überall aus? Wieso läuft das QGIS-Plug-In des ehemaligen
   Arbeitskollegen nicht mehr?
 
@@ -54,13 +54,13 @@ die Zusammenhänge zwischen Datensätzen, Diensten und Anwendungen abbildet. In 
 das Datenmodell vorgestellt und wie es die einleitenden Fragen beantwortet.}
 
 \abstractElf{Axel Schaefer}%
-{Neues in Metador: Einbau eines CSW und Umsetzung von Metadatenvorgaben der GDI-DE für ISO und INSPIRE}%
-{}%
+{Neues in Metador}%
+{Make Metadata Great Again}%
 {Der quelloffene Metadateneditor MetaDor wird zur Zeit als einfach zu bedienender und schnell
 anzupassender Editor für Metadaten genutzt. Die aktuellen Entwicklungen erweitern ihn nun um einen
-CSW-Publisher, sodass die Software selbst die Metadaten über eine CSW-Schnittstelle nach draußen
-publizieren kann. Des Weiteren sind die Standardformulare für Geodaten und Dienste mit den
-Konventionen des GDI-DE Arbeitskreises erweitert worden. Der Vortrag stellt die spannenden
+CSW-Publisher, sodass die Software selbst die Metadaten über eine CSW"=Schnittstelle nach draußen
+publizieren kann. Zudem sind die Standardformulare für Geodaten und Dienste mit den
+Konventionen des GDI-DE-Arbeitskreises erweitert worden. Der Vortrag stellt die spannenden
 Neuerungen in einer aktuellen Entwicklerversion vor.}
 
 \abstractDreizehn{Robert Klemm}%
@@ -72,15 +72,24 @@ Basis-Routinglösung zur Verfügung gestellt wurde. Die Berechnung der
 Route muss neben der Wegstrecke zusätzlich die Fahrzeugklasse und deren
 Kosten für eine Infrastrukturabgabe berücksichtigen (Maut-Routing).
 Ziel war es, die frei verfügbaren Mautinformationen aus verschiedenen
-Quellen zu verwenden, um ein offlinefähiges Routing, unter Einbeziehung
-der LKW-Maut oder andere LKW-Maut relevanten Attributinformationen, als
+Quellen zu verwenden, um ein offlinefähiges Routing unter Einbeziehung
+der LKW-Maut oder anderer LKW-Maut-relevante Attributinformationen als
 Routingprofil in GraphHopper zu erlauben.}
 
 \newtimeslot{10:30}
-\abstractNeun{Arne Schubert; Stephan Herritsch}%
-{Mobile Nutzung von Geodaten mit einem Leaflet-basierten Offline-Client }%
+\abstractNeun{Arne Schubert}%
+{Mobile Nutzung von Geodaten mit \mbox{einem} Leaflet-basierten Offline-Client}%
 {}%
-{siehe Anlage}
+{In einer technischen Machbarkeitsstudie hat die WhereGroup eine hybride mobile
+Anwendung erstellt, die Daten sowohl online beziehen kann als auch offline
+vorhält. Durch die hybride und modulare Struktur kann die Anwendung flexibel
+auf den benötigten Funktionsumfang angepasst werden, als auch auf allen
+typischen mobilen Geräten benutzt werden.
+
+Dabei setzt die Anwendung auf
+bewährte moderne Frameworks wie Ionic inkl. Cordova sowie YAGA leaflet-ng,
+welches Leaflet in Angular integriert. Die Offlinedaten können als Geopackage
+importiert werden.}
 
 \abstractElf{Dirk Stenger}%
 {Erhöhe den Nutzen deines Dienstes}%
@@ -88,19 +97,19 @@ Routingprofil in GraphHopper zu erlauben.}
 {Um die Implementierung von GIS-Software zu unterstützen, stellt das Open Geospatial Consortium
 (OGC) mehrere Validatoren basierend auf der TEAM Engine zur Verfügung. Die TEAM Engine ist ein
 Testframework, mit dem Entwickler Geodatendienste, wie zum Beispiel WFS und WMS, testen können.  In
-diesem Vortrag wird gezeigt, wie die TEAM Engine zum Erstellen einer WFS 2.0-Referenzimplementierung
+diesem Vortrag wird gezeigt, wie die TEAM Engine zum Erstellen einer WFS~2.0"=Referenzimplementierung
 verwendet wurde. Zudem erfolgt eine Demonstration, wie die TEAM Engine und ein vollständiger deegree
-WFS 2.0 inklusive PostgreSQL Datenbank mit Docker in einer Entwicklungsumgebung eingesetzt werden
+WFS~2.0 inklusive PostgreSQL-Datenbank mit Docker in einer Entwicklungsumgebung eingesetzt werden
 können.}
 
 \abstractDreizehn{Frederik Ramm}%
 {Routing Engines für OpenStreetMap}%
-{eine Marktübersicht}%
-{Inzwischen buhlen eine Reihe von auf OpenStreetMap spezialisierten Open-Source-Routing-Engines um
-Aufmerksamkeit: Neben den Platzhirschen OSRM und Graphhopper gibt es "Valhalla" von Mapzen, den
-Newcomer "Itinero", ältere Programme wie "routino" und Speziallösungen wie "brouter" für das
+{Eine Marktübersicht}%
+{Inzwischen buhlen eine Reihe auf OpenStreetMap spezialisierter Open-Source-Routing-Engines um
+Aufmerksamkeit. Neben den Platzhirschen OSRM und Graphhopper gibt es \emph{Valhalla} von Mapzen, den
+Newcomer \emph{Itinero}, ältere Programme wie \emph{routino} und Speziallösungen wie \emph{brouter} für das
 Fahrradrouting. Dieser Vortrag möchte die Stärken und Schwächen der verschiedenen Lösungen aufzeigen
-und Empfehlungen für verschiedenen Anwendungsbereiche aussprechen. }
+und Empfehlungen für verschiedenen Anwendungsbereiche aussprechen.}
 
 
 \newtimeslot{11:30}
@@ -108,13 +117,13 @@ und Empfehlungen für verschiedenen Anwendungsbereiche aussprechen. }
 \abstractNeun{Christian Mayer}%
 {GeoExt 3 in der Praxis}%
 {}%
-{GeoExt ist eine auf den JavaScript-Bibliotheken OpenLayers und ExtJS aufbauende OpenSource
-  JavaScript-Bibliothek, die es vereinfacht, Kartenmaterial in ansprechenden und komplexen
+{GeoExt ist eine auf den JavaScript-Bibliotheken Open\-Lay\-ers und ExtJS aufbauende
+  Open"=Source"=JavaScript"=Bibliothek, die es vereinfacht, Kartenmaterial in ansprechenden und komplexen
   Oberflächen zu präsentieren.  Der Vortrag stellt zunächst die Neuerungen von GeoExt 3 sowie die
   Neuerungen der Vater-Bibliotheken
-vor.  Anschließend werden Projekte aus der Praxis gezeigt, bei denen GeoExt 3 als zentrales
+vor.  Anschließend werden Projekte aus der Praxis gezeigt, bei denen GeoExt~3 als zentrales
 Webmapping-Framework eingesetzt wird. Dabei werden die vielfältigen Einsatzmöglichkeiten zum Aufbau
-von WebGIS mit GeoExt gezeigt sowie nützliche Tipps aus der Praxis und "Dos and Don'ts"
+von WebGIS mit GeoExt gezeigt sowie nützliche Tipps aus der Praxis und "`Dos and Don'ts"'
 vorgestellt.}
 
 \abstractElf{Sebastian Goerke}%
@@ -125,48 +134,49 @@ es zunehmend wichtig, selbst über die Gestaltung des Arbeitstages zu bestimmen 
 einhergehend auch ortsunabhängig arbeiten zu können. Diese Entwicklungen betreffen auch die
 Geobranche. Wie soll er also aussehen, der GIS-Arbeitsplatz der Zukunft?  Die Auslagerung von
 Anwendungen in die Cloud ist geeignet, Einsparungen im IT-Betrieb herbeizuführen. Aber ein typischer
-GIS-Arbeitsplatz besteht heute aus Desktop-Anwendungen. Desktop-Anwendungen in der Cloud? Eine
-klassische Antwort lautet hier:}
+GIS"=Arbeitsplatz besteht heute aus Desktop-Anwendungen. Desktop-Anwendungen in der Cloud? Eine
+klassische Antwort lautet hier Web-GIS.}
 
 \abstractDreizehn{Tim Alder}%
 {Geodaten in der Wikipedia}%
 {Ein Update 2017}%
 {Der Vortrag soll den aktuellen Stand für die Geodaten- und Kartennutzung im Bereich der Wikipedia
 wiedergeben. Teilaspekte sind Geodaten und deren Visualisierung in Wikidata, ein graphischer
-Karteneditor für die Wikipedia und die Speicherung von Geometriedaten in Commons.  }
+Karteneditor für die Wikipedia sowie die Speicherung von Geometriedaten in Commons.  }
 
 
 \newtimeslot{12:00}
 \abstractNeun{Markus Neteler}%
-{GRASS GIS - Projektstatus und Neuerungen der Version 7.2}%
+{GRASS GIS -- Projektstatus und Neuerungen der Version 7.2}%
 {}%
 {Nach mehr als zwei Jahren Arbeit ist ein neues Major Release von GRASS GIS, die Version 7.2.0,
-  erschienen. Neben Performance- und Effizienz-Verbesserungen enthält die neue Version eine ganze
-  Reihe an innovativen Modulen zur Analyse von Raster- und Vektordaten sowie zur Zeitreihenanalyse,
-  darunter einen visuellen Datenkatalog, einen integrierten Python Editor, LiDAR Unterstützung,
-  Berechnung von 3D Fließakkumulation
+erschienen. Neben Performance- und Effizienz-Verbesserungen enthält die neue Version eine ganze
+Reihe an innovativen Modulen zur Analyse von Raster- und Vektordaten sowie zur Zeitreihenanalyse,
+darunter einen visuellen Datenkatalog, LiDAR"=Unterstützung, einen integrierten Python"=Editor,
+Berechnung von 3D"=Fließakkumulation und 3D"=Gradienten
+und neue effiziente Rasterdatenkompression.
 
-Der Vortrag erläutert den aktuellen Stand des GRASS GIS Projekts, geht insbesondere auf die
+Der Vortrag erläutert den aktuellen Stand des GRASS-GIS-Projekts, geht insbesondere auf die
 Neuerungen der Version 7.2 ein und stellt einige der neuen Module exemplarisch vor.
 }
 
 \abstractElf{Jörg Höttges}%
-{QKan - Kanalkataster mit QGIS}%
+{QKan -- Kanalkataster mit QGIS}%
 {Projektbeschreibung und aktueller Entwicklungsstand}%
 {Basierend auf QGIS werden eine Datenbankstruktur sowie verschiedene Plugins für ein Kanalkataster
 erstellt, mit der die Kanaldaten vor allem für Berechnungsprogramme vorbereitet und die
 Berechnungsergebnisse aufbereitet und weiterverwendet werden können. Als Datenbanken sind SpatiaLite
-und PostGIS vorgesehen. Die Programmierung erfolgt mit Python basierten Plugins. Als anzubindende
-Simulationsprogramme sind zunächst HYSTEM-EXTRAN (ITWH), Kanal++ (tandler.com) sowie SWMM geplant. }
+und PostGIS vorgesehen. Die Programmierung erfolgt mit Python-basierten Plugins. Als anzubindende
+Simulationsprogramme sind zunächst HYSTEM-EXTRAN (ITWH), Kanal++ (tandler.com) sowie SWMM geplant.}
 
 \abstractDreizehn{Arndt Brenschede}%
-{OSM Datenformate für Anwendungen}%
-{Der Weg zu verlustfreien Vektor-Tiles}%
+{OSM-Datenformate für Anwendungen}%
+{Der Weg zu verlustfreien Vektortiles}%
 {OSM-Daten werden bis heute üblicherweise in speziellen Datenformaten für spezielle Anwendungsfälle
 aufbereitet, was für Einsteiger unübersichtlich ist und dem Anwender die Handhabung erschwert.
 Dieser Vortrag gibt einen Überblick über die gängigen Lösungen mit ihren Vor- und Nachteilen sowie
 einen Ausblick auf die Möglichkeit, OSM-Daten ohne Informationsverlust in einem universellen,
-indexierten und gekachelten Format darzustellen: verlustfreie Vektortiles.  }
+indexierten und gekachelten Format darzustellen~-- verlustfreie Vektortiles.}
 
 \newtimeslot{12:30}
 \abstractNeun{Otto Dassau}%
@@ -185,31 +195,30 @@ stehen in den kommenden Monaten an. Der Vortrag gibt einen Überblick zu folgend
 }
 
 \abstractElf{Till Adams}%
-{The real Big Data – Potentiale eines satellitenbildgestützten Temperaturdatenarchivs}%
-{}%
-%{s.o.}
+{The real Big Data}
+{Potentiale eines satellitenbildgestützten Temperaturdatenarchivs}%
 {Im Rahmen eines Forschungs- und Entwicklungsprojektes bauen wir (Mundialis) ein 15 Jahre
   zurückreichendes Temperaturdatenarchiv für ganz Europa, das auf Satellitendaten basiert, auf.
   Das Archiv beinhaltet vier Temperaturschritte pro Tag und hat eine räumliche Auflösung von einem
   Kilometer und ist damit genauer und besser, als jegliche, auf Interpolation von wenigen
   Klimastationen basierenden interpolierte Datensätze.
-  Der Vortrag konzentriert sich auf zwei Hauptaspekte:
-  - Verarbeitung von Fernerkundungsdaten im Terabyte-Bereich mit High-Performance-Computing mit
-  GRASS GIS
-- Potentielle Anwendungsfelder der aus diesem Archiv generierten Information}
+  Der Vortrag konzentriert sich auf zwei Hauptaspekte: die
+  Verarbeitung von Fernerkundungsdaten im Terabyte-Bereich mit High-Performance-Computing mit
+  GRASS GIS und potentielle Anwendungsfelder der aus diesem Archiv generierten Information}
 
 \abstractDreizehn{Roman Härdi}%
 {Feuerwehreinsatzkarten mit OSM}%
-{Wenn es brennt, eilt es! – Karten sollen für die Anfahrt und für den Einsatz die notwendigen
-Informationen gut lesbar zur Verfügung stellen}%
-{Wenn es brennt, eilt es! -- Karten sollen für die
+{Wenn es brennt, eilt es!}%
+{Karten sollen für die
   Anfahrt und für den Einsatz die notwendigen Informationen gut lesbar zur Verfügung stellen.
-Der Vortrag zeigt, die für die Feuerwehr wichtigen Informationen mit Geobezug. Welche gibt es schon
+Der Vortrag zeigt die für die Feuerwehr wichtigen Informationen mit Geobezug.
+
+Welche gibt es schon
 in OSM? Wie können aus der Reihe der Feuerwehr neue Mapper geworben, motiviert und unterstützt
 werden?  Es wird der Prozess von der Datenerfassung, Rendering bis zur Erzeugung des Ausschnitts für
 die
-Anfahrt und der Einsatz anhand eines Beispiels gezeigt. Die offenen Herausforderungen sind: fehlende
-Tags, schützen der kritischen Nodes vor falscher Bearbeitungen.}
+Anfahrt und der Einsatz anhand eines Beispiels gezeigt. Die offenen Herausforderungen sind fehlende
+Tags und das Schützen der kritischen Nodes vor falscher Bearbeitungen.}
 
 \newtimeslot{14:00}
 \abstractNeun{Claas Leiner}%
@@ -223,8 +232,8 @@ Modellerwerkzeugen lässt sich die QGIS-Benutzeroberfläche so vereinfachen, das
 Nutzer erfolgreich mit ihren Daten arbeiten können. 
 }
 
-\abstractElf{Volker Grescho; Roland Krämer}%
-{OpenSource, OpenData und Citizen Science in der Biodiversitätsforschung}%
+\abstractElf{Volker Grescho, Roland Krämer}%
+{Open Source, Open Data und Citizen Science in der Biodiversitätsforschung}%
 {Wie Wissenschaft und Verwaltung von freiem Zugang und Bürgerbeteiligung profitieren}%
 {Weltweit schreitet der Verlust von Artenvielfalt und intakten Lebensräumen mit ernstzunehmender
 Geschwindigkeit voran. In Deutschland existiert eine Vielzahl von Projekten, die Daten zu Natur und
@@ -237,7 +246,7 @@ und/oder Open Access sind.}
 \abstractDreizehn{Michael Glanznig}%
 {Meine eigene Karte: Überblick über Rendering-Techniken und Software}%
 {}%
-{Wer heute seine eigene Karte rendern möchte, hat soviel Auswahl wie nie. Von Raster über
+{Wer heute seine eigene Karte rendern möchte, hat soviel Auswahl wie nie. Von Raster- über
 Vektortiles, von Mapnik über OSM2Vectortiles zu Mapbox. TileMill, Kosmtik oder Mapbox Studio? Ich
 versuche einen Überblick über die derzeit vorhandene Renderingtechnik und -software, über ihre
 Stärken und Schwächen, zu geben. Beispiele sollen überblicksmäßig verdeutlichen welche Komponenten
@@ -250,12 +259,17 @@ Zukunft aussehen könnte.}
 \abstractNeun{Marco Hugentobler}%
 {QGIS Server Projektstatus}%
 {}%
-{Dieser Beitrag gibt einen Überblick über diverse Aktivitäten, die rund um QGIS Server im Gange sind. So gibt es im Rahmen von QGIS3 diverse Änderungen in der Codebasis. Ende letzten Jahres wurden Änderungen eingepflegt, welche QGIS Server zu einer WMS 1.3-konformen Software machen. Im Vortrag wird auch gezeigt, was es für den OGC-Test braucht und was im Server geändert werden musste, damit der Test erfolgreich durchläuft.}
+{Dieser Beitrag gibt einen Überblick über diverse Aktivitäten, die rund um QGIS
+Server im Gange sind. So gibt es im Rahmen von QGIS~3 diverse Änderungen in der
+Codebasis. Ende letzten Jahres wurden Änderungen eingepflegt, welche QGIS
+Server zu einer WMS~1.3-konformen Software machen. Im Vortrag wird auch
+gezeigt, was es für den OGC-Test braucht und was im Server geändert werden
+musste, damit der Test erfolgreich durchläuft.}
 
 \abstractElf{Pirmin Kalberer}%
-{Von WMS zu WMTS zu Vektor-Tiles}%
-{Eigene Daten als MB Vektor-Tiles publizieren}%
-{Vektor-Tiles haben das Potential die bewährten
+{Von WMS zu WMTS zu Vektortiles}%
+{Eigene Daten als Mapbox Vector Tiles publizieren}%
+{Vektortiles haben das Potential die bewährten
 Rasterkarten in vielen Bereichen abzulösen oder mindestens maßgeblich zu ergänzen.
 Open-Source-Produkte geben dabei den Takt an und es steht bereits eine beachtliche Zahl an
 Vektortile-Servern zur Verfügung, um eigene Daten in diesem effizienten Format zu publizieren. Der
@@ -278,13 +292,14 @@ Auf den ersten Blick erscheint das nicht weiter anspruchsvoll, untersucht man
 eine Seekarte jedoch im Detail, so stellen die Karteneigenschaften eine hohe
 Komplexität in Hinblick auf die Entwicklung von Algorithmen dar.
 Offizielle Seekarten werden computergestützt gerendert und manuell
-nachbearbeitet, um eine optimale Darstellung zu erreichen. Smrender ist ein OpenSource-Projekt, das versucht die Besonderheiten von
-Papierseekarten zu implementieren.}
+nachbearbeitet, um eine optimale Darstellung zu erreichen.
+Das Open-Source-Projekt Smrender versucht die Besonderheiten von Papierseekarten
+zu implementieren.}
 
 \newtimeslot{15:00}
 \abstractNeun{Andreas Neumann}%
 {QGIS Web Client 2}%
-{Die 2. Generation des Web Clients optimiert für QGIS Server}%
+{Die zweite Generation des Webclients optimiert für QGIS Server}%
 {QGIS Web Client~2 (QWC~2) ist die zweite Generation des QGIS-Webclients,
 optimiert für QGIS Server. QWC~2 setzt responsive Design ein. Die
 identische Version läuft auf Tablets, Mobiltelefonen und
@@ -298,16 +313,23 @@ Einsatz: OpenLayers~3, ReactJS, nodejs und yarn.}
 {PostGIS in Action}%
 {Optimierte Datenbanken für Online-Stadtpläne}%
 {Der Vortrag ist ein Erfahrungsbericht von der Umsetzung verschiedener Onlinekarten-Projekte mit
-  PostgreSQL/PostGIS auf Basis von amtlichen Daten (ALK/ALKIS) und OpenStreetMap. 
+  PostgreSQL und PostGIS auf Basis von amtlichen Daten (ALK/ALKIS) und OpenStreetMap. 
 
 Es werden die folgenden Fragen beantwortet: Wie können Daten importiert werden? Wie können Daten
 strukturiert werden? Wie können Daten homogenisiert werden? Wie können Daten im laufenden Betrieb
 aktualisiert werden? Wie können Daten optimiert werden?}
 
 \abstractDreizehn{}{Lightning Talks II}{}%
-{DeepVGI (Alexander Zipf)\\
-Einsatz von Lowcost-Lidarsystemen für die OSM-Landvermessung (Kolossos)\\
-Unkonventionelle Karten mit g2jascii (Hans Jörg Stark)}
+{%
+  \vspace{-2em}
+  \begin{itemize}
+    \RaggedRight
+    \setlength{\itemsep}{-0.25\baselineskip} % Aufzählungspunktabstand auf 0
+    \item \emph{Alexander Zipf:} DeepVGI
+    \item \emph{Kolossos:} Einsatz von Lowcost-Lidarsystemen für die OSM-Landvermessung
+    \item \emph{Hans Jörg Stark:} Unkonventionelle Karten mit g2jascii
+  \end{itemize}
+}
 
 
 \newtimeslot{16:00}
@@ -317,41 +339,55 @@ Unkonventionelle Karten mit g2jascii (Hans Jörg Stark)}
 {Die xPlanBox dient der Abbildung der Bauleit-, Regional- und Landschaftsplanung auf Basis von
 XPlanGML. Der Vortrag stellt die auf Open-Source-Software basierte Lösung vor und zeigt die
 Abbildung von Prozessen zur Verwaltung der Planwerke innerhalb einer PostgreSQL/PostGIS-Datenhaltung
-sowie zur Validierung von XPlanGML-Dateien auf. Die Publikation der Daten über deegree WFS- und
+sowie zur Validierung von XPlanGML"=Dateien auf. Die Publikation der Daten über deegree-WFS- und
 WMS-Dienste sowie Einbindung in die Webclients OpenLayers und Geomajas werden im Rahmen des Vortrags
 ebenfalls vorgestellt.}
 
 \abstractElf{Marco Lechner}%
-{Open-Source -Strategien im Notfallschutz}%
-{Migration von proprietärer Software zu OS Entwicklung}%
+{Open-Source-Strategien im Notfallschutz}%
+{Migration von proprietärer Software zu einer Open-Source-Entwicklung}%
 {Um das System der Radioaktivitätsüberwachung weiterzuentwickeln, setzt das Bundesamt für
-Strahlenschutz (BfS) auf eine Open-Source-Strategie. Das BfS migriert derzeit sein IMIS-System von
-einem proprietären zu einem komponentenorientierten Notfallinformationssystem. Das neue IMIS3
-integriert neben Eigenentwicklungen viele OSGeo-Projekte, wie PostGIS, GeoExt, OpenLayers3,
+Strahlenschutz auf eine Open-Source-Strategie. Das Bundesamt für Strahlenschutz migriert derzeit sein IMIS-System von
+einem proprietären zu einem komponentenorientierten Notfallinformationssystem. Das neue IMIS~3
+integriert neben Eigenentwicklungen viele OSGeo-Projekte, wie PostGIS, GeoExt, OpenLayers~3,
 Geoserver, GeoNetwork und MapfishPrint. Der Vortrag präsentiert GitHub-gehostete
-Open-Source-Projekte des BfS, die in einem OS-gestützten Software-Stack eingebettet sind und mehrere
-bekannte OSGeo-Projekte einsetzen.}
+Open-Source-Projekte des Bundesamts für Strahlenschutz, die in einem
+Open-Source-gestützten Softwarestack eingebettet sind und mehrere bekannte
+OSGeo-Projekte einsetzen.}
 
 
 \abstractDreizehn{Alexander Lehner}%
 {OSM und Freifunk}%
 {Geodaten themenübergreifend nutzen}%
-{- Allgemeine Problembeschreibung (was gehört in OSM und was nicht)
-- konkretes Beispiel 'WiFi' mit diversen Tagging Schemata
-- Vorstellung des Freifunk Konzepts (ohne weiteren OSM Bezug)
-- Geo-Referenzierung der Freifunk Hotspots
-- Darstellung auf der Freifunk-Karte mit zusätzlichen Tools zur Meta-Daten Analyse}
+{%
+Das Freifunk-Projekt erlebt zurzeit in Deutschland einen ähnlichen Aufschwung
+wie OpenStreetMap in der Vergangenheit.
+Durch das Anstecken eines Freifunk-Routers erweitert sich das Netzwerk um einen
+weiteren Knoten.
 
+Die aus dem
+Heimgebrauch bekannte WLAN"=Funktechnik zieht einen
+geografischen Bezug nach sich, weshalb hier zur Visualisierung von
+Knotenpunkten auch die OSM"=Karte zum Einsatz kommt. Diese Knotenkarte ist jedoch
+nicht statisch,
+sondern wird live aktualisiert.
+Dies erlaubt die Ansicht von WLAN-Verfügbarkeit und -Nutzung
+in Echtzeit.
+Hinzu liefert OSM Informationen zu den Standorten der Knoten und
+deren näherer Umgebung. Ob die
+Eck-Kneipe gut läuft und wohin die jungen Leute am Wochenende abends ausgehen.
+All das verrät die
+Freifunk"=Knotenkarte und vielleicht noch ein wenig mehr.}
 
 \newtimeslot{16:30}
 \abstractNeun{Till Adams}%
-{SHOGun2 – das moderne Webmapping-Framework}%
+{SHOGun~2 -- das moderne Webmapping-Framework}%
 {auf dem Weg zu einem Open-Source-Projekt}%
-{SHOGun wird seit dem Jahr 2011 als Webmapping-Framework entwickelt und hat sich mittlerweile in
-  vielen Installationen, insbesondere bei Großkunden bewährt.  Es wird die Version SHOGun2
+{SHOGun wird seit dem Jahr 2011 als Webmapping"=Framework entwickelt und hat sich mittlerweile in
+  vielen Installationen, insbesondere bei Großkunden bewährt.  Es wird die Version SHOGun~2
   vorgestellt und anhand von Beispielen gezeigt, wie Kartenclient --
-zusammengesetzt aus OpenLayers 3 und wahlweise GeoExt3 oder react.js -- mit den
-Verwaltungsoberflächen zusammenspielen.  SHOGun2 greift dabei bewährte Konzepte aus SHOGun auf,
+zusammengesetzt aus OpenLayers~3 und wahlweise GeoExt3 oder react.js -- mit den
+Verwaltungsoberflächen zusammenspielen.  SHOGun~2 greift dabei bewährte Konzepte aus SHOGun auf,
 wurde aber als komplette Neuentwicklung mit großem Fokus auf Modularität und Aktualität der
 verwendeten Bibliotheken entwickelt.}
 
@@ -361,9 +397,11 @@ verwendeten Bibliotheken entwickelt.}
 {}%
 {Geodatenportale gewinnen immer mehr Nutzer. Dies ist jedoch keine Selbstverständlichkeit, sondern
 das Ergebnis umfangreicher Verbesserungen bei Usability und Performanz. Heute werden interaktive und
-zugängliche Geoweb-Anwendungen verlangt, die den Nutzer auf kürzestem Wege zur gesuchten Information
+zugängliche Geowebanwendungen verlangt, die den Nutzer auf kürzestem Wege zur gesuchten Information
 führen. Doch was ist heute der State of the Art des Technologie-Stacks für die Entwicklung von
-Geoweb-Anwendungen? Am Beispiel von geoportal.ch wird vorgestellt, wie fortschrittliche
+Geowebanwendungen?
+
+Am Beispiel von geoportal.ch wird vorgestellt, wie fortschrittliche
 Webtechnologien wie NodeJS, ExpressJS, Geoserver, Turf, AngularJS etc. zu einer Geoweb-Architektur
 integriert werden.}
 
@@ -373,20 +411,21 @@ integriert werden.}
 {Linienverläufe und Haltestellen des öffentlichen Verkehr werden schon seit vielen Jahren in
 OpenStreetMap erfasst. In der letzten Zeit hat sich bei diesem Thema allerdings Ernüchterung
 breitgemacht. Einstige Mapper wenden sich von diesem Themengebiet ab, neue Mapper werden von der
-Komplexität des Mappings abgeschreckt und übrig bleibt ein Kern von wenigen Enthusiasten. In diesem
+Komplexität des Mappings abgeschreckt und übrig bleibt ein Kern von wenigen Enthusiasten.
+In diesem
 Vortrag werden Erfahrungen und Probleme aus der Sicht eines langjährigen ÖPNV-Mappers dargestellt
-und Anregungen für Vereinfachungen des ÖPNV-Mappings gemacht, um mehr Mapper für dieses Thema zu
+und Anregungen für Vereinfachungen des ÖPNV"=Mappings gemacht, um mehr Mapper für dieses Thema zu
 gewinnen.}
 
 \newtimeslot{17:00}
 \abstractNeun{Thomas Klein}%
-{Das GeoMapFish Web-GIS-Framework – Neuerungen und Anwendungen der neuen Version 2.x}%
-{}%
-{Der Vortrag präsentiert das Open-Source Web-GIS Projekt “GeoMapFish” und gibt einen Überblick über
-dessen Aufbau und Funktionen, sowie einen kleinen Überblick der bereits damit umgesetzten
+{Das GeoMapFish Web-GIS-Framework}%
+{Neuerungen und Anwendungen der neuen Version 2.x}%
+{Der Vortrag präsentiert das Open-Source Web-GIS Projekt GeoMapFish und gibt einen Überblick über
+dessen Aufbau und Funktionen sowie einen kleinen Überblick der bereits damit umgesetzten
 Fachanwendungen. Weiterhin werden bisherige und geplante Neuerungen, Funktionalitäten und
 Erweiterungen vorgestellt, wie zum Beispiel die neue Editierfunktion in Abhängigkeit von
-Nutzerrollen oder die Möglichkeit der QGIS-Serveranbindung.}
+Nutzerrollen oder die Möglichkeit der QGIS-Server-Anbindung.}
 
 % Vortrag JGISShell wurde zurückgezogen.
 
@@ -397,4 +436,7 @@ Nutzerrollen oder die Möglichkeit der QGIS-Serveranbindung.}
 {Das OSM-Quiz bietet als Fortsetzung des Events vom letztem Jahr wieder spannende Fragen zu
 interessanten Fakten. Jeder ist herzlich eingeladen mitzuraten um sein Wissen im Umfeld von
 OpenStreetMap und GIS zu testen und vielleicht auch etwas aufzufrischen.}
+
+\newpage
+Hier wird Werbung stehen.
 
