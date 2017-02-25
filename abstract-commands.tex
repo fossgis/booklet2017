@@ -219,17 +219,35 @@ height=169mm, contents={%
 
 %% Längen für Sponsorenbox
 \newlength{\fboxwidth}
-\setlength{\fboxwidth}{\textwidth}
-\advance\fboxwidth by -8.0pt
+
+\def\workshopsSection{workshopsSection}
+\def\abstractsSection{abstractsSection}
+\newcommand{\sponsorenbox}[4]{%
+  %% Längen für Sponsorenbox
+  \setlength{\fboxwidth}{\textwidth}
+  \advance\fboxwidth by -7.0pt
+  \abstractSponsorenbox{#1}{#2}{#3}{#4}{\workshopsSection}%
+}
+
+\newcommand{\sponsorenboxA}[4]{%
+  %% Längen für Sponsorenbox
+  \setlength{\fboxwidth}{\textwidth}
+  \advance\fboxwidth by -10.0pt
+  \abstractSponsorenbox{#1}{#2}{#3}{#4}{\abstractsSection}%
+}
+
 %% Sponsorenbox
 %% 1. Logo
 %% 2. Logobreite
 %% 3. Anzahl benötigter Zeilen
 %% 4. Text
-\newcommand{\sponsorenbox}[4]{%
-	\setlength{\fboxsep}{4.5pt}
-	\noindent
-	\hspace{1.65pt}
+%% 5. Umfeld (\workshopsSection oder \abstractsSection}
+\newcommand{\abstractSponsorenbox}[5]{%
+	\setlength{\fboxsep}{4.5pt}%
+	\noindent%
+	\ifthenelse{\equal{#5}{\workshopsSection}}{%
+	  \hspace{2.65pt}%
+	}{\hspace{-1pt}}%
 	\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
 			\begin{wrapfigure}[#3]{r}[0pt]{#2}
 				\centering\vspace{-1\baselineskip}
@@ -240,7 +258,6 @@ height=169mm, contents={%
 		}}
 		\setlength{\fboxsep}{3pt}
 	}
-
 
 
 % Definitionen für Tagestabellen
