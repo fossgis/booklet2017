@@ -225,7 +225,7 @@ height=169mm, contents={%
 %% Längen für Sponsorenbox
 \newlength{\fboxwidth}
 \setlength{\fboxwidth}{\textwidth}
-\advance\fboxwidth by -6.5pt
+\advance\fboxwidth by -8.0pt
 %% Sponsorenbox
 %% 1. Logo
 %% 2. Logobreite
@@ -233,7 +233,9 @@ height=169mm, contents={%
 %% 4. Text
 \newcommand{\sponsorenbox}[4]{%
 	\setlength{\fboxsep}{4.5pt}
-	\noindent\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
+	\noindent
+	\hspace{1.65pt}
+	\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
 			\begin{wrapfigure}[#3]{r}[0pt]{#2}
 				\centering\vspace{-1\baselineskip}
 				\includegraphics[width=#2]{#1}
