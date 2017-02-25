@@ -10,17 +10,12 @@
 
 
 % Standard-Seitenstil definieren (Schnittmarken mit Seitenazhl)
-\DeclareNewLayer[background, oddpage, width=125mm,%
+\DeclareNewLayer[background, oddorevenpage, width=125mm,%
 height=169mm, contents={%
   \includegraphics{wallpaper/crop-marks.pdf}%
-}]{cropmarksodd}
-\DeclareNewLayer[background, evenpage, width=125mm,%
-height=169mm, contents={%
-  \includegraphics{wallpaper/crop-marks.pdf}%
-}]{cropmarkseven}
+}]{cropmarksevery}
 \newpairofpagestyles[scrheadings]{cropmarksstyle}{}
-\AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarksodd}
-\AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarkseven}
+\AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarksevery}
 
 
 % Hintergrund setzen
