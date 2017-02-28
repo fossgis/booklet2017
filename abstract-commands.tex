@@ -242,23 +242,26 @@ height=169mm, contents={%
 %% 3. Anzahl benötigter Zeilen
 %% 4. Text
 %% 5. Umfeld (\workshopsSection oder \abstractsSection}
+\makeatletter
 \newcommand{\abstractSponsorenbox}[5]{%
-	\setlength{\fboxsep}{4.5pt}%
-	\noindent%
-	\ifthenelse{\equal{#5}{\workshopsSection}}{%
-	  \hspace{2.65pt}%
-	}{\hspace{-1pt}}%
-	\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
-			\begin{wrapfigure}[#3]{r}[0pt]{#2}
-				\centering\vspace{-1\baselineskip}
-				\includegraphics[width=#2]{#1}
-			\end{wrapfigure}
+  \setlength{\fboxsep}{4.5pt}%
+  \noindent%
+  \ifthenelse{\equal{#5}{\workshopsSection}}{%
+    \hspace{2.65pt}%
+  }{\hspace{-1pt}}%
+  \fcolorbox{gray}{white}{\parbox{\fboxwidth}{
+    \@ifmtarg{#1}{}{%
+      \begin{wrapfigure}[#3]{r}[0pt]{#2}
+        \centering\vspace{-1\baselineskip}
+        \includegraphics[width=#2]{#1}
+      \end{wrapfigure}
+    }
 
-			\noindent #4
-		}}
-		\setlength{\fboxsep}{3pt}
-	}
-
+    \noindent #4
+  }}
+  \setlength{\fboxsep}{3pt}
+}
+\makeatother
 
 % Definitionen für Tagestabellen
 \newcolumntype{Z}[1]{>{\RaggedRight\arraybackslash}p{#1}}%
