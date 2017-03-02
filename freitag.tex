@@ -149,3 +149,15 @@ mit einer konkreten Aufgabe.}
 \input{sponsorentexte/206-terrestris}
 \vfill
 \input{sponsorentexte/402-osgeo-live}
+
+\newpage
+% neuer Layer für Geländeplan
+\DeclareNewLayer[background, oddorevenpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/raumplan-a6.pdf}%
+}]{raumplana6}
+\newpairofpagestyles[scrheadings]{raumplan}{}
+\AddLayersAtBeginOfPageStyle{raumplan}{raumplana6}
+\pagestyle{raumplan}
+\label{raumplan-page}
+\null
