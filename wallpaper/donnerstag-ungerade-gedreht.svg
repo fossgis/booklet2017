@@ -8,11 +8,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="442.91336"
-   height="597.04724"
+   width="472.44092"
+   height="636.8504"
    id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="dienstag-ungerade-gedreht.svg">
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="dienstag-ungerade-gedreht.svg"
+   viewBox="0 0 442.91336 597.04724">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -22,16 +23,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1366"
+     inkscape:window-height="708"
      id="namedview17"
      showgrid="false"
-     inkscape:zoom="5.6279825"
-     inkscape:cx="383.08938"
-     inkscape:cy="272.85841"
+     inkscape:zoom="2.8139913"
+     inkscape:cx="397.01847"
+     inkscape:cy="258.32739"
      inkscape:current-layer="svg2"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata8">
@@ -48,37 +49,45 @@
   <defs
      id="defs6" />
   <path
-     d="m 35.433071,1.2109375e-6 0,17.7165297890625"
+     d="M 35.433071,1.2109375e-6 V 17.716531"
      id="path4591"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
-     d="m 0,35.433071 17.716535,0"
+     d="M 0,35.433071 H 17.716535"
      id="path4593"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
-     d="m 407.48031,1.2109375e-6 0,17.7165297890625"
+     d="M 407.48031,1.2109375e-6 V 17.716531"
      id="path4595"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
-     d="m 442.91339,35.433071 -17.71654,0"
+     d="M 442.91339,35.433071 H 425.19685"
      id="path4597"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
-     d="m 407.48031,597.04724 0,-17.71653"
+     d="M 407.48031,597.04724 V 579.33071"
      id="path4601"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
      d="m 425.19685,561.61415 17.71654,2e-5"
      id="path4603"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
-     d="m 35.433071,579.33069 0,17.71655"
+     d="m 35.433071,579.33069 v 17.71655"
      id="path4605"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <path
      d="M 17.716535,561.61415 0,561.61417"
      id="path4607"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
   <rect
      style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none"
      id="rect3022-31"
@@ -88,14 +97,13 @@
      height="124.01575"
      width="38.976379" />
   <text
-     sodipodi:linespacing="100%"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:11px;line-height:100%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:11px;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
      id="text3838-4"
-     transform="matrix(0,-1,1,0,0,0)"
+     transform="rotate(-90)"
      y="398.36154"
      x="-355.03812"><tspan
        id="tspan3903"
        y="398.36154"
-       x="-355.03812">Dienstag</tspan></text>
+       x="-355.03812">Donnerstag</tspan></text>
 </svg>

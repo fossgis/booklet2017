@@ -39,23 +39,30 @@ height=169mm, contents={%
 % Donnerstag
 \DeclareNewLayer[background, oddpage,  width=125mm,%
 height=169mm, contents={%
-  \includegraphics{wallpaper/dienstag-ungerade.pdf}%
+  \includegraphics{wallpaper/donnerstag-ungerade.pdf}%
 }]{donnerstagungerade}
 \DeclareNewLayer[background, evenpage,  width=125mm,%
 height=169mm, contents={%
-  \includegraphics{wallpaper/dienstag-gerade.pdf}%
+  \includegraphics{wallpaper/donnerstag-gerade.pdf}%
 }]{donnerstaggerade}
+\DeclareNewLayer[background, oddpage,  width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/donnerstag-ungerade-gedreht.pdf}%
+}]{donnerstagungeradegedreht}
+\newpairofpagestyles[scrheadings]{donnerstag-tabelle}{}
+\AddLayersAtBeginOfPageStyle{donnerstag-tabelle}{donnerstaggerade}
+\AddLayersAtBeginOfPageStyle{donnerstag-tabelle}{donnerstagungeradegedreht}
 \newpairofpagestyles[scrheadings]{donnerstag}{}
 \AddLayersAtBeginOfPageStyle{donnerstag}{donnerstaggerade}
 \AddLayersAtBeginOfPageStyle{donnerstag}{donnerstagungerade}
 % Freitag
 \DeclareNewLayer[background, oddpage,  width=125mm,%
 height=169mm, contents={%
-  \includegraphics{wallpaper/montag-ungerade.pdf}%
+  \includegraphics{wallpaper/freitag-ungerade.pdf}%
 }]{freitagungerade}
 \DeclareNewLayer[background, evenpage,  width=125mm,%
 height=169mm, contents={%
-  \includegraphics{wallpaper/montag-gerade.pdf}%
+  \includegraphics{wallpaper/freitag-gerade.pdf}%
 }]{freitaggerade}
 \newpairofpagestyles[scrheadings]{freitag}{}
 \AddLayersAtBeginOfPageStyle{freitag}{freitaggerade}

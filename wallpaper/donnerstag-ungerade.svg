@@ -11,8 +11,9 @@
    width="125mm"
    height="168mm"
    id="svg2"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="dienstag-ungerade.svg">
+   inkscape:version="0.92.1 r"
+   sodipodi:docname="dienstag-ungerade.svg"
+   viewBox="0 0 442.91339 595.27559">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -23,16 +24,16 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="719"
+     inkscape:window-height="708"
      id="namedview17"
      showgrid="false"
      inkscape:zoom="2.2360334"
-     inkscape:cx="317.18485"
-     inkscape:cy="92.810009"
+     inkscape:cx="446.8788"
+     inkscape:cy="259.62326"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="g5777"
      units="mm" />
   <metadata
      id="metadata8">
@@ -42,38 +43,38 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <path
-     d="m 35.433071,-1.6820713e-5 0,17.716535820713"
+     d="M 35.433071,-1.6820713e-5 V 17.716519"
      id="path4591"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
-     d="m 0,35.433054 17.716535,0"
+     d="M 0,35.433054 H 17.716535"
      id="path4593"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
-     d="m 407.48031,-1.6820713e-5 0,17.716535820713"
+     d="M 407.48031,-1.6820713e-5 V 17.716519"
      id="path4595"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
-     d="m 442.91339,35.433054 -17.71654,0"
+     d="M 442.91339,35.433054 H 425.19685"
      id="path4597"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
-     d="m 407.48031,595.27559 0,-17.71653"
+     d="M 407.48031,595.27559 V 577.55906"
      id="path4601"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0" />
@@ -83,7 +84,7 @@
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0" />
   <path
-     d="m 35.433071,577.55904 0,17.71655"
+     d="m 35.433071,577.55904 v 17.71655"
      id="path4605"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      inkscape:connector-curvature="0" />
@@ -106,13 +107,12 @@
     <text
        x="289.84378"
        y="-392.71698"
-       transform="matrix(0,1,-1,0,0,0)"
+       transform="rotate(90)"
        id="text3838-4"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:11px;line-height:100%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       sodipodi:linespacing="100%"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:11px;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold Semi-Condensed';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="289.84378"
          y="-392.71698"
-         id="tspan3903">Dienstag</tspan></text>
+         id="tspan3903">Donnerstag</tspan></text>
   </g>
 </svg>
