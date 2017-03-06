@@ -17,6 +17,13 @@ height=169mm, contents={%
 \newpairofpagestyles[scrheadings]{cropmarksstyle}{}
 \AddLayersAtBeginOfPageStyle{cropmarksstyle}{cropmarksevery}
 
+% Seitenstil für Titelseite
+\DeclareNewLayer[background, oddorevenpage, width=125mm,%
+height=169mm, contents={%
+  \includegraphics{wallpaper/deckseite-vektor-mit-schnittmarken.pdf}%
+}]{titlelayer}
+\newpairofpagestyles[]{titlestyle}{}
+\AddLayersAtBeginOfPageStyle{titlestyle}{titlelayer}
 
 % Hintergrund setzen
 \def\mittwoch{Mittwoch}
